@@ -1,5 +1,5 @@
 --
--- Table structure for `ubiqisense` database
+-- Table structure for `capture_video` database
 --
 
 CREATE TABLE IF NOT EXISTS `names` (

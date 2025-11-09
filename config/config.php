@@ -4,7 +4,7 @@
  * Configuration file
  * 
  * @author Alex Kaydansky <kaydansky@gmail.com>
- * @copyright (c) UbiqiSense ApS
+
  * @package Capture Video
  * @version 1.0
  * @since 03/05/2018
