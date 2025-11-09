@@ -1,0 +1,36 @@
+<div class="middle" style="height:150px;">
+    <h2 class="spanMiddle">Please enter name and press Okay</h2>
+</div>
+
+<div class="middle" style="height:250px;">
+    <div style="width: 300px; margin: auto;">
+        <div class="spanMiddle" style="display: block; margin: 0 auto;">
+            <form id="nameForm" action="/record-name" method="post">
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <input type="text" class="form-control" name="name" id="Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button id="btnYes" class="btn btn-group">Okay</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#nameForm").validate({
+            rules: {
+                'name': {
+                    required: true
+                }
+            }
+        });
+        
+        $("#Name").mask('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', {translation: {'Z': {pattern: /[a-zA-Z0-9 ]/, recursive: true}}});
+    });
+</script>

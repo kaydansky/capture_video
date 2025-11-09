@@ -1,0 +1,1005 @@
+/*
+ * Basic styles
+ */
+html,
+body {
+    height: 100%;
+    margin:0;
+    font-size: 18px;
+    background-color: #1a2026;
+}
+
+body, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: "Ubuntu", "Helvetica", "Arial", sans-serif;
+    color: #7e888e;
+}
+
+h1 {
+    font-size: 4.4em;
+    color: #f8b332;
+}
+
+h2, .h2 {
+    font-size: 2.8em;
+}
+
+h3, .h3 {
+    font-size: 1.625em;
+}
+
+a{
+    color: #428bca;
+}
+a:hover, a:focus {
+    color: #3865f6;
+    text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+    h2, .h2 {
+        font-size: 2em;
+    }
+    h3, .h3 {
+        font-size: 1.325em;
+    }
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0px;
+}
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -130px;
+    text-align: center;
+}
+.wrapper:after {
+    content: "";
+    display: block;
+}
+.logo-footer, .wrapper:after {
+    height: 130px;
+}
+.logo-footer {
+    background: #1a2026;
+}
+
+.middle {
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.spanMiddle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn-simple .fa{
+    float: left;
+    padding-right: 5px;
+    line-height: 17px;
+}
+
+.input-group .input-group-addon {
+    padding: 0px 15px 0px;
+}
+
+.radio label span{
+    top: 0px;
+}
+
+.form-group.has-error .material-input,
+.form-group label.error {
+    font-size: 11px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+/*
+ * These styles are required for Table
+ */
+.table>thead>tr>th {
+    font-size: 1.05em;
+    white-space: nowrap;
+}
+.table .material-icons{
+    width:auto;
+    height:auto;
+    /*display: block;*/
+    font-size: 20px;
+}
+.table .thead-light{
+    background-color: rgba(0,0,0,.02);
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+.table>thead>tr>th {
+    border-bottom: 2px solid #ddd!important;
+}
+.table>tbody>tr>td .fa{
+    width:10px;
+    text-align:center
+}
+.table>tbody>tr.thead-light>td[data-column="name"]{
+    /*padding-left:25px*/
+}
+tr.branch > td:first-child {cursor:pointer}
+
+/*
+ * These styles are required for Wrapper
+ */
+.perfect-scrollbar-off .main-panel {
+    min-height: 100%;
+    height: 100%;
+}
+.main-panel {
+     width:100%;
+}
+.main-panel > .content {
+    /*min-height: 100%;*/
+    min-height: calc(100% - 150px);
+}
+@media (min-width: 992px){
+    .sidebar + .main-panel {width: calc(100% - 260px);  }
+    .sidebar-mini .sidebar + .main-panel {
+        width: calc(100% - 80px);
+    }
+    .navbar-toggle{display:none!important}
+    .sidebar + .main-panel .navbar-minimize{
+        display:block!important
+    }
+}
+
+.navbar-minimize, .navbar-toggle{display:none!important}
+
+@media (max-width: 1199px){
+    .navbar .navbar-nav>li>a {
+        padding: 15px 5px;
+    }
+}
+@media (max-width: 991px) {
+    .sidebar + .main-panel .navbar-toggle{display:block!important}
+    .nav-open .off-canvas-sidebar .navbar-collapse, .nav-open .sidebar {
+        height:100%;
+    }
+}
+/*
+ * These styles are required for Container
+ */
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.togglebutton label input[type=checkbox][data-color="blue"]:checked+.toggle{
+    background-color: #544ea9;
+}
+.togglebutton label input[type=checkbox]:checked+.toggle:after {
+    border-color: #544ea9;
+}
+
+/*
+ * Full page style
+ */
+.full-page:before {
+
+}
+.full-page[data-color="blue"]{position:relative;min-height:100%;}
+.full-page[data-color="blue"],
+.full-page[data-color="blue"]:before{
+    background: #273b96;
+    background: -moz-radial-gradient(center, ellipse cover, #273b96 0%, #342967 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #273b96 0%, #342967 100%);
+    background: radial-gradient(ellipse at center, #273b96 0%, #342967 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273b96', endColorstr='#342967',GradientType=1 );
+    background-size: 100% 100%;
+}
+/*.full-page>.content {*/
+    /*min-height: calc(100vh);*/
+/*}*/
+
+/*
+ * These styles are required for Label
+ */
+.control-label small, .control-label star{color:#f44336}
+
+/*
+ * These styles are required for Form
+ */
+.form-group {
+    padding-bottom: 25px;
+}
+.form-group.is-focused .form-control {
+    background-image: linear-gradient(#477cc5, #3766f6), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.form-group.has-error.is-focused .form-control {
+    background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.form-group.has-error .material-input,
+.form-group label.error,
+.has-error .dropdown-toggle .filter-option{
+    color: #f44336;
+}
+.form-group:not(.has-error) .form-control.valid,
+.has-success .select-with-transition{
+    background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2)!important;
+    background-size: 100% 2px, 100% 1px;
+    box-shadow: none;
+    transition-duration: 0.3s;
+}
+/*.has-error + label.control-label{*/
+    /*color: #f44336;*/
+/*}*/
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+    opacity:1
+}
+@media (max-width: 991px){
+    .form-control+.form-control-feedback {
+         margin-top: 0;
+    }
+}
+
+
+/*
+ * These styles are required for Picture Container
+ */
+
+.picture-container {
+    position: relative;
+    text-align: center;
+}
+.picture-container .picture+h6 {
+    font-size: 0.95em;
+    min-height: 80px;
+}
+.picture-container .card-avatar .picture {
+    border-radius: 0;
+    width: 130px;
+}
+.picture-container .picture {
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+    border-radius: 5%;
+    margin: -5px auto;
+    overflow: hidden;
+    position: relative;
+    /*border: 1px solid #e9e9e9;*/
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+.picture-container .card-avatar input[type="file"] {
+    left: auto;
+    right: auto;
+    max-width: 125px;
+}
+.picture-container .picture img {
+    width: 240px;
+    margin-left: -25%;
+    background-color: #fff;
+}
+.picture-container .picture .progress{
+    position: absolute;
+    width: 100%;
+    background: transparent;
+}
+.picture-container .card-avatar .picture img {
+    min-width: 130px;
+    min-height: 130px;
+    margin-left: -7%;
+    max-width: 130px;
+}
+
+.card-avatar {
+    border: 4px solid #ccc;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.card-avatar.upload:hover {
+    border-color: #477cc5;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1366px){
+    .verify-panel>div{width:50%}
+    .verify-panel>div:last-child{width:100%}
+}
+
+/*
+ * These styles are required for Card
+ */
+.card{
+    margin: 25px 0;
+}
+.card [data-background-color]{
+    margin: -28px 15px 0;
+}
+.card .header{
+    margin: 0 15px;
+}
+.card .card-content {
+    position: relative;
+    padding: 15px;
+}
+.card .card-content .card-title {
+    padding-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card .card-content .category {
+    margin-bottom: 25px;
+    height: 40px;
+    line-height: 19px;
+    overflow: hidden;
+}
+.card .card-footer {
+    margin: 0 15px 10px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1366px){
+    .card .card-content .category{
+        font-size: 12px;
+    }
+    .card .card-footer .stats {
+        line-height: 25px;
+        font-size: 11px;
+    }
+}
+.card .footer{
+    margin-bottom:15px;
+}
+.card [data-background-color="blue"] {
+    background: linear-gradient(60deg, #7596ff, #3865f6);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(160, 182, 255);
+}
+.card [data-background-color="white"] {
+    background: linear-gradient(60deg, #fff, #f8f8f8);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(244, 244, 244);
+}
+.card [data-background-color="white"] .fa{
+    color:#3c66f6
+}
+.card-stats .card-header {
+    max-width: 86px;
+}
+.card-stats .card-header i.fa{
+    font-size: 25px;
+}
+.card-payout h3,
+.card-payout h4{
+    padding-left:8px
+}
+/*
+ * These styles are required for Card Pricing
+ */
+.card-pricing{
+    min-width: 220px;
+    max-width: 250px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.card-pricing:hover{
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    background:#fff;
+    z-index:2
+}
+.card-pricing .logo{
+    border-radius: 5%;
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+}
+.card-pricing[data-background-color="blue"] .logo {
+    background: linear-gradient(60deg, #7596ff, #3865f6);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(160, 182, 255);
+}
+.card-pricing[data-background-color="green"] .logo {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4);
+}
+.card-pricing[data-background-color="yellow"] .logo {
+    background: linear-gradient(60deg, #fcd31b, #ffb000);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 212, 35, 0.4);
+}
+.card-pricing[data-background-color="orange"] .logo {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+}
+.card-pricing[data-background-color="red"] .logo {
+    background: linear-gradient(60deg, #ef5350, #e53935);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4);
+}
+.card-pricing .card-content .card-description{
+    font-size: 0.9em;
+    line-height: 1.4em;
+    height: 150px;
+    overflow:hidden;
+}
+.card-pricing .card-content .card-title{
+    padding-bottom: 0;
+}
+.card-pricing .card-content span{
+    font-size: 0.8em;
+    line-height: 1.4;
+    display: block;
+}
+.card-pricing .card-content h4{
+    margin-top: 0;
+}
+.card-pricing.card-raised {
+    z-index: 1;
+}
+
+/*
+ * These styles are required for Content Pricing
+ */
+.content-pricing>div{
+    max-width: 1400px;
+    margin: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    .content-pricing .col-md-4 {
+        width: 33.33%;
+    }
+    .content-pricing .col-md-6 {
+        width: 50%;
+    }
+}
+@media (min-width: 1367px){
+    .content-pricing .col-lg-2 {
+        width: 20%;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+}
+
+/*
+ * These styles are required for Card Login
+ */
+
+.card-login .card-title{
+    font-weight: normal;
+    font-size: 1.6em;
+}
+.card-login i {
+    display: inline-block;
+}
+.card-login .help-block .fa{
+    display: inline;
+}
+.card-login .title{
+    margin-bottom:20px
+}
+.card-login .logo{
+    width: 80px;
+    margin: 20px auto 10px;
+    display: block;
+}
+.card-login .card-content {
+    padding: 0px 30px 0px 10px;
+}
+
+/*
+ * These styles are required for Card Transfer
+ */
+.card-transfer hr{
+    margin-bottom: 0;
+}
+.card-transfer ul li{
+    float: left;
+    width: 50%;
+}
+
+.card-content textarea{
+    width:100%;
+    line-height:19px;
+    font-size:13px;
+}
+
+.card-profile, .card-testimonial {
+    margin-top: 25px;
+    text-align: center;
+}
+.card-profile .btn{
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-profile .btn .material-icons{
+    float:left;
+    margin-right:2px;
+}
+/*
+ * These styles are required for SideBar
+ */
+.sidebar[data-background-color="blue"],.sidebar[data-background-color="blue"] .sidebar-background:after {
+    background: #273b96;
+    background: -moz-radial-gradient(center, ellipse cover, #273b96 0%, #342967 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #273b96 0%, #342967 100%);
+    background: radial-gradient(ellipse at center, #273b96 0%, #342967 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273b96', endColorstr='#342967',GradientType=1 );
+}
+.sidebar[data-background-color="blue"] .nav li>a {
+    color: #FFFFFF;
+}
+.sidebar[data-background-color="blue"] .user a {
+    color: #FFFFFF;
+}
+.sidebar[data-background-color="blue"] .nav i,
+.sidebar[data-background-color="blue"] .nav li.active>a,
+.sidebar[data-background-color="blue"] .nav li.active>a i{
+    color: #dae2fc;
+}
+.sidebar[data-active-color="blue"] li.active>a{
+    background-color: #3865f6;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(56, 101, 246, 0.4);
+}
+.wizard-card[data-color="blue"] .moving-tab {
+    background-color: #5050a0;
+    color: #fff;
+    background: linear-gradient(60deg, #564eac, #4a558d);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(55, 55, 121);
+}
+
+.sidebar .sidebar-wrapper {
+    height: calc(100% - 160px);
+}
+
+.sidebar .sidebar-wrapper .navbar-promo{
+    display:none;
+}
+@media (max-width: 991px){
+    .sidebar::before, .off-canvas-sidebar nav .navbar-collapse::before {
+         background:none;
+    }
+    .card-profile, .card-testimonial {
+        margin-top: 60px;
+        text-align: center;
+    }
+}
+
+/*
+ * These styles are required for Wizard Card
+ */
+.wizard-page>.content{
+    padding-top: 10vh;
+}
+.wizard-card .tab-content {
+    min-height: 250px;
+}
+.wizard-card .nav-pills>li>a{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #f4f4f4;
+    pointer-events: none;
+}
+.wizard-card[data-color="blue"] .has-error .select-with-transition,
+.wizard-card[data-color="blue"] .has-error .form-control,
+.wizard-card[data-color="blue"] .form-group.has-error .form-control,
+.wizard-card[data-color="blue"] .form-group .form-control.error{
+    background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2);
+    background-size: 100% 2px, 100% 1px;
+    transition-duration: 0.3s;
+}
+.wizard-card[data-color="blue"] .radio input[type=radio]:checked~.check {
+    background-color: #5150a1;
+}
+.wizard-card[data-color="blue"] .radio input[type=radio]:checked~.circle {
+    border-color: #5150a1;
+}
+.wizard-card[data-color="blue"] .form-group .form-control-feedback{
+    font-size:20px;color:#5150a1;
+}
+.wizard-card[data-color="blue"] .form-group.has-error .form-control-feedback{
+    color:#f44336;
+}
+.wizard-card[data-color="blue"] .form-group .form-control {
+    background-image: linear-gradient(#3766f6, #5150a1), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card .card-content textarea{width:100%;line-height:19px;font-size:13px;padding:15px;}
+
+.wizard-card .wizard-header {
+    padding: 25px 20px 35px;
+}
+
+@media screen and (max-width: 767px) {
+    .wizard-card .wizard-header {
+        padding: 10px 15px;
+    }
+}
+
+/*
+ * These styles are required for Button
+ */
+.btn, .navbar .navbar-nav>li>a.btn{
+    padding: 12px 15px;
+}
+.btn.btn-info, .btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info:active, .btn.btn-info.active, .btn.btn-info:active:focus, .btn.btn-info:active:hover, .btn.btn-info.active:focus, .btn.btn-info.active:hover, .open>.btn.btn-info.dropdown-toggle, .open>.btn.btn-info.dropdown-toggle:focus, .open>.btn.btn-info.dropdown-toggle:hover, .navbar .navbar-nav>li>a.btn.btn-info, .navbar .navbar-nav>li>a.btn.btn-info:hover, .navbar .navbar-nav>li>a.btn.btn-info:focus, .navbar .navbar-nav>li>a.btn.btn-info:active, .navbar .navbar-nav>li>a.btn.btn-info.active, .navbar .navbar-nav>li>a.btn.btn-info:active:focus, .navbar .navbar-nav>li>a.btn.btn-info:active:hover, .navbar .navbar-nav>li>a.btn.btn-info.active:focus, .navbar .navbar-nav>li>a.btn.btn-info.active:hover, .open>.navbar .navbar-nav>li>a.btn.btn-info.dropdown-toggle, .open>.navbar .navbar-nav>li>a.btn.btn-info.dropdown-toggle:focus, .open>.navbar .navbar-nav>li>a.btn.btn-info.dropdown-toggle:hover {
+    background-color: #3766f6;
+    color: #fff;
+}
+.btn.btn-info:focus, .btn.btn-info:active, .btn.btn-info:hover, .navbar .navbar-nav>li>a.btn.btn-info:focus, .navbar .navbar-nav>li>a.btn.btn-info:active, .navbar .navbar-nav>li>a.btn.btn-info:hover {
+    box-shadow: 0 14px 26px -12px rgba(56, 101, 246, 0.5), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(56, 101, 246, 0.2);
+}
+.btn.btn-xs, .btn-group-xs .btn, .navbar .navbar-nav>li>a.btn.btn-xs, .btn-group-xs .navbar .navbar-nav>li>a.btn {
+    padding: 4px 6px;
+    font-size: 9px;
+}
+.btn input[type="file"],
+.picture-container input[type="file"]{
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*
+ * These styles are required for Nav-pills
+ */
+.nav-pills.nav-pills-icons>li i {
+    margin: 15px auto;
+    padding: 0;
+}
+.nav-pills.nav-pills-icons>li>a {
+    line-height: 16px;
+    background: #ddd;
+    border: 1px solid #999;
+    min-width: 124px;
+}
+.nav-pills.nav-pills-icons > li.active > a, .nav-pills.nav-pills-icons > li.active > a:hover, .nav-pills.nav-pills-icons > li.active > a:focus {
+    background-color: #3766f6;
+    color: #fff;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(56, 101, 246, 0.4);
+    border-radius: 4px;
+}
+.nav-pills.nav-pills-rose > li.active > a, .nav-pills.nav-pills-rose > li.active > a:focus, .nav-pills.nav-pills-rose > li.active > a:hover{
+    border: 1px solid #e91e63;
+}
+.nav-pills.nav-pills-info>li.active>a, .nav-pills.nav-pills-info>li.active>a:focus, .nav-pills.nav-pills-info>li.active>a:hover {
+    background-color: #3766f6;
+    border-color: #3766f6;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(56, 101, 246, 0.4);
+}
+@media (max-width: 767px){
+    .nav-pills > li > a{
+        min-width: auto;
+    }
+    .wrapper>.main-panel>.content {
+        margin-top: 115px;
+    }
+    .navbar .navbar-form {
+             margin-top: 3px;
+         }
+    .navbar-promo .btn{
+        margin-top: 2px;
+        margin-left:0;
+    }
+}
+@media (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .navbar-promo .form-group{
+        float: left;
+    }
+    .navbar-promo .btn{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+.navbar .form-group.label-floating:not(.is-focused) label.control-label, .navbar .form-group.label-placeholder:not(.is-focused) label.control-label {
+    top: -14px;
+}
+.navbar .dropdown-menu li a:hover, .navbar .dropdown-menu li a:focus, .navbar .dropdown-menu li a:active, .navbar.navbar-default .dropdown-menu li a:hover, .navbar.navbar-default .dropdown-menu li a:focus, .navbar.navbar-default .dropdown-menu li a:active, .bootstrap-table .dropdown-menu li a:hover, .bootstrap-table .dropdown-menu li a:focus, .bootstrap-table .dropdown-menu li a:active {
+    background-color: #3865f6;
+    color: #FFFFFF;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(53, 93, 222, 0.4);
+}
+.navbar-login .navbar-nav>li{
+    display: inline-block;
+}
+.navbar-login .navbar-nav>li>a {
+    padding: 15px 5px;
+    opacity: 1;
+    margin: 0 15px;
+}
+
+.icon.icon-blue {
+    color:#3766f6;
+}
+
+/*
+ * These styles are required for Modal Pop-up
+ */
+
+.modal .modal-lock {
+    padding-top: 50px;
+    margin: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal .card-content .tab-content{
+    margin-top: 25px;
+}
+.modal .wizard-card{
+    box-shadow: none;
+}
+.modal .wizard-card .nav-pills>li>a{
+    pointer-events: auto;
+}
+.modal .wizard-card .tab-content {
+    padding: 40px 0 0;
+}
+
+.progress .progress-bar, .progress .progress-bar.progress-bar-default {
+    background-color: #3865f6;
+}
+
+.container-loader{
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1060;
+}
+.loader {
+    border: 4px solid #d2d2d2;
+    border-top: 4px solid #283a93;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    margin-right: -40px;
+    margin-top: -40px;
+    border-radius: 50%;
+    z-index: 1061;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.help-block{
+    background:#fff;
+    width: 100%;
+}
+
+/*
+* =========================================================
+*
+* THESE STYLES ARE REQUIRED FOR PLUGINS
+*
+* =========================================================
+*/
+
+
+/*
+ * These styles are required for International Telephone Input
+ */
+.intl-tel-input label{
+    left: 35px;
+    white-space: nowrap;
+    z-index: 1;
+}
+.intl-tel-input .country-list .flag-box, .intl-tel-input .country-list .country-name {
+    font-size: 13px;
+}
+.intl-tel-input.allow-dropdown .flag-container, .intl-tel-input.separate-dial-code .flag-container {
+    background: #fff;
+}
+.intl-tel-input .selected-flag{padding: 0;}
+.intl-tel-input.allow-dropdown .flag-container:hover .selected-flag {
+    background-color: transparent;
+}
+.intl-tel-input.allow-dropdown .selected-flag, .intl-tel-input.separate-dial-code .selected-flag {
+    width: 35px;
+}
+.intl-tel-input.allow-dropdown input, .intl-tel-input.allow-dropdown input[type="text"], .intl-tel-input.allow-dropdown input[type="tel"], .intl-tel-input.separate-dial-code input, .intl-tel-input.separate-dial-code input[type="text"], .intl-tel-input.separate-dial-code input[type="tel"] {
+    padding-left: 35px;
+    padding-right: 18px;
+}
+
+/*
+ * These styles are required for Bootstrap Form Helpers
+ */
+
+.bfh-selectbox .bfh-selectbox-options{
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+.bfh-selectbox.open a {
+    background: none;
+}
+[data-active-color="blue"] .bfh-selectbox .bfh-selectbox-options ul li>a:hover,
+[data-active-color="blue"] .bfh-selectbox .bfh-selectbox-options ul li>a:focus {
+    background-color: #5050a0;
+    background: linear-gradient(60deg, #564eac, #4a558d);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(48, 48, 120, 0.4);
+    color: #FFFFFF;
+}
+.bfh-selectbox .bfh-selectbox-options ul li{
+    margin: 0 5px;
+}
+.bfh-selectbox .bfh-selectbox-toggle {
+    padding: 12px 30px 6px 12px;
+    background: none;
+    box-shadow: none;
+}
+.bfh-selectbox .bfh-selectbox-options ul li>a{
+    padding: 6px 20px;
+}
+.bfh-selectbox .ripple-container .ripple{
+    display:none;
+}
+@media (max-width: 991px) {
+    .sidebar .bfh-selectbox {
+       display:none
+    }
+}
+
+.dropdown-toggle .filter-option {
+    color: #AAAAAA;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.8;
+}
+
+[data-color="blue"] .dropdown-menu li a:hover,
+[data-color="blue"] .dropdown-menu li a:focus,
+[data-color="blue"] .dropdown-menu li a:active,
+.bootstrap-datetimepicker-widget table td.active>div,
+.bootstrap-datetimepicker-widget table td.active:hover>div,
+.navbar .dropdown-menu li a:hover,
+.navbar .dropdown-menu li a:focus,
+.navbar .dropdown-menu li a:active,
+.navbar.navbar-default .dropdown-menu li a:hover,
+.navbar.navbar-default .dropdown-menu li a:focus,
+.navbar.navbar-default .dropdown-menu li a:active,
+.bootstrap-table .dropdown-menu li a:hover,
+.bootstrap-table .dropdown-menu li a:focus,
+.bootstrap-table .dropdown-menu li a:active{
+    background-color: #5050a0;
+    background: linear-gradient(60deg, #564eac, #4a558d);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(48, 48, 120, 0.4)!important;
+    color: #FFFFFF;
+}
+.selected {
+    background-color: #fff2e3;
+}
+
+/*
+ * These styles are required for dataTable plugin
+ */
+table.dataTable{
+    width:100%!important;
+}
+table.dataTable>tbody>tr>td:first-child {
+    padding-left: 30px !important;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+    margin: 10px 0;
+}
+table.dataTable>tbody>tr.child ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+table.dataTable>tbody>tr.child span.dtr-title {
+    min-width: 140px;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before{
+    font-size: 18px;
+    box-shadow: 0 0 1px 0px rgba(51, 51, 51, 0.6);
+    color: #212121!important;
+}
+table.table>thead>tr>th, table.table>tbody>tr>th, table.table>tfoot>tr>th, table.table>thead>tr>td, table.table>tbody>tr>td, table.table>tfoot>tr>td,
+table.dataTable>thead>tr>th, table.dataTable>tbody>tr>th, table.dataTable>tfoot>tr>th, table.dataTable>thead>tr>td, table.dataTable>tbody>tr>td, table.dataTable>tfoot>tr>td{
+    white-space: nowrap;
+    padding: 15px 8px!important;
+}
+
+@media (max-width: 1200px) {
+.pagination>li>a, .pagination>li>span{
+    border-radius: 25px !important;
+    padding: 0px 5px;
+    margin: 0 1px;
+    min-width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+}
+@media (max-width: 767px){
+    div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:first-child,
+    div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-child {
+        /*width:50%;*/
+        /*float:left;*/
+        padding: 0;
+    }
+    div.dataTables_wrapper div.dataTables_length label{
+        width:100%
+    }
+    div.dataTables_wrapper .form-group.form-group-sm{
+        display:inline;
+    }
+    div.dataTables_wrapper div.dataTables_filter label{
+        float:right;
+    }
+    .pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus{
+        padding: 0 5px;
+    }
+}
+
+.table.treetable span.indenter{
+    width: 15px!important;
+}
+
+.table.treetable tr.collapsed span.indenter a,
+.table.treetable tr.expanded span.indenter a{
+    background-image:none!important;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    width: 15px;
+}
+
+.table.treetable tr.collapsed span.indenter a:before{
+    content: "\f0da";
+}
+.table.treetable tr.expanded span.indenter a:before{
+    content: "\f0d7";
+}
